@@ -1,0 +1,12 @@
+<div class="color-detail">
+  <div class="title-header" [style.background]="clickBtnA?color.mauBackground:''"  [style.color]="clickBtnB?color.mauChu:''">
+    {{title}}
+  </div>
+  <div class="footer">
+      <button class="btn-a" (click)="changeColor()" >A</button>
+    <div class="title-footer">
+      <input  type="text" [(ngModel)]="title">
+    </div>
+      <button class="btn-b" (click)="changeBackgroundColor()">B</button>
+  </div>
+</div>
